@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="mg.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="main">
+        <div class="main-container">
+            <h1 class="title">Animal memory game</h1>
+
+            <div class="scoreboard">
+                <div>
+                    <label for="tries">Tries: </label>
+                    <span id="tries" name="tries">0</span>
+                </div>
+                <div>
+                    <label for="difficulty-btn">Change difficulty</label>
+                    <button class="difficulty-btn" name="difficulty-btn">Change</button>
+                </div>
+            </div>
+
+            <div class="board">
+                <ul id="card-container">
+                    <li class="card unflipped" id="card1" type="cat">
+                        <i class="fas fa-cat"></i>
+                    </li>
+                    <li class="card unflipped" id="card2" type="cat">
+                        <i class="fas fa-cat"></i>
+                    </li>
+                    <li class="card unflipped" id="card3" type="crow">
+                        <i class="fas fa-crow"></i>
+                    </li>
+                    <li class="card unflipped" id="card4" type="crow">
+                        <i class="fas fa-crow"></i>
+                    </li>
+                    <li class="card unflipped" id="card5" type="dove">
+                        <i class="fas fa-dove"></i>
+                    </li>
+                    <li class="card unflipped"id="card6" type="dove">
+                        <i class="fas fa-dove"></i>
+                    </li>
+                    <li class="card unflipped" id="card7" type="dragon">
+                        <i class="fas fa-dragon"></i>
+                    </li>
+                    <li class="card unflipped" id="card8" type="dragon">
+                        <i class="fas fa-dragon"></i>
+                    </li>
+                    <li class="card unflipped" id="card9" type="hippo">
+                        <i class="fas fa-hippo"></i>
+                    </li>
+                    <li class="card unflipped" id="card10" type="hippo">
+                        <i class="fas fa-hippo"></i>
+                    </li>
+                    <li class="card unflipped"" id="card11" type="frog">
+                        <i class="fas fa-frog"></i>
+                    </li>
+                    <li class="card unflipped" id="card12" type="frog">
+                        <i class="fas fa-frog"></i>
+                    </li>
+                    <li class="card unflipped" id="card13" type="horse">
+                        <i class="fas fa-horse-head"></i>
+                    </li>
+                    <li class="card unflipped" id="card14" type="horse">
+                        <i class="fas fa-horse-head"></i>
+                    </li>
+                    <li class="card unflipped" id="card15" type="spider">
+                        <i class="fas fa-spider"></i>
+                    </li>
+                    <li class="card unflipped" id="card16" type="spider">
+                        <i class="fas fa-spider"></i>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container">
+        <div id="intro-modal">
+            <h1 class="title large">The Memory Game</h1>
+            <button id="play-btn">PLAY</button>
+        </div>
+
+        <div id="difficulty-modal">
+            <h3>Select difficulty</h3>
+            <div class="difficulty-container">
+                <div class="difficulty-div">
+                    <button id="easy-diff" class="diff-btn">EASY</button>
+                    <span>4 pairs</span>
+                    <span>8 pieces</span>
+                </div>
+                <div class="difficulty-div">
+                    <button id="medium-diff" class="diff-btn">MEDIUM</button>
+                    <span>6 pairs</span>
+                    <span>12 pieces</span>
+                </div>
+                <div class="difficulty-div">
+                    <button id="hard-diff" class="diff-btn">HARD</button>
+                    <span>8 pairs</span>
+                    <span>16 pieces</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="congratulations-modal">
+        <div class="congratulations-div">
+            <span id="congratulations-message"></span>
+            <div>
+                <label for="diff-btn">Change difficulty</label>
+                <button class="difficulty-btn" name="diff-btn">Change</button>
+            </div>
+            <button id="close-modal">x</button>
+        </div>
+    </div>
+    <script src="mg.js"></script>
+</body>
+</html>
